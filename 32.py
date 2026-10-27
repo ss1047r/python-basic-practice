@@ -2,9 +2,11 @@
 
 n = int(input("Enter the value: "))
 
-if n == 0:
-    print("Zero is not allowed")
+count = 0
+if n < 0:
+    print("Negative values are not allowed")
 else:
-    for i in range(1,n+1):
+    for i in range(1, n+1):
         if i % 3 == 0:
-            print(i)
+            count += 1
+    print(f"Count: {count}")
