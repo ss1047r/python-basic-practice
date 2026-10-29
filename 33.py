@@ -1,10 +1,10 @@
-# Write a program to display all numbers from 1 to n that are divisible by 3 or 5.
+# Write a program to count the number of digits in a number n
 
-n = int(input("Enter the value: "))
+user_input = input("Enter the number: ")
 
-if n < 0:
-    print("Negative number are not accepted.")
-else:
-    for i in range(1, n+1):
-        if (i % 3 == 0) or (i % 5 == 0):
-            print(i)
+count = 0
+for i in user_input:
+    if "0" <= i <= "9":
+        count += 1
+
+print(count)
